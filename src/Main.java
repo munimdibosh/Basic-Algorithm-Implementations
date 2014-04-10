@@ -3,10 +3,12 @@ import com.dibosh.experiments.datastructures.ContainerExceptions.EmptyException;
 import com.dibosh.experiments.datastructures.ContainerExceptions.FullException;
 import com.dibosh.experiments.datastructures.Queue;
 import com.dibosh.experiments.datastructures.Stack;
+import com.dibosh.experiments.interestingprobs.SmallInterestingProblem;
 
 
 public class Main {
 
+	
 	static void testStack(){
 		int size = 10;
 		Stack<Integer> st = new Stack<Integer>(size);
@@ -72,6 +74,8 @@ public class Main {
 		// TODO Auto-generated method stub
 //		testStack();
 //		testQueue();
+		//Algo tests
+		SmallInterestingProblem.calculateSumForNumber(4678);
 	}
 
 }
