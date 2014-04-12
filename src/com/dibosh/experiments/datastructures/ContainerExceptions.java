@@ -16,4 +16,9 @@ public class ContainerExceptions{
 			super("Container is full");
 		}
 	}
+	public static class NotFoundException extends Exception{
+		public NotFoundException(){
+			super("Element not found");
+		}
+	}
 }

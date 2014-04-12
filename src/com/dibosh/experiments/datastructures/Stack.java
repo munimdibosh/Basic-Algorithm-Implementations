@@ -13,9 +13,17 @@ import com.dibosh.experiments.datastructures.ContainerExceptions.FullException;
 public class Stack<T extends Object> extends DataContainer{
 	ArrayList<T> objects;
 	int STACK_CAPACITY;
+	String label;//name of the stack;
 	public Stack(int capacity){
 		STACK_CAPACITY = capacity;
 		objects = new ArrayList<T>();
+	}
+	
+	public void setLabel(String label){
+		this.label = label;
+	}
+	public String getLabel(){
+		return label;
 	}
 	private boolean isFull(){
 		return size()==STACK_CAPACITY;
@@ -64,4 +72,6 @@ public class Stack<T extends Object> extends DataContainer{
 		}
 		System.out.println("**Done printing the stack**");
 	}
+	
+	
 }
